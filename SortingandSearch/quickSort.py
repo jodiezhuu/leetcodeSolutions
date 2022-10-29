@@ -20,7 +20,7 @@ def quickSort(array, low, high):
     if low < high:
         par = partition(array, low, high)
         quickSort(array, low, par - 1) # repeat on left of pivot
-        quickSort(array, par + 1, high) # repeat on right of picot 
+        quickSort(array, par + 1, high) # repeat on right of pivot 
 
 data = [3, 2, 5, 1, -9, 29, 18]
 quickSort(data, 0, len(data) - 1)
